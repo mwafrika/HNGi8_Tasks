@@ -9,6 +9,18 @@
   </head>
   <body>
     <div id="myName"></div>
-    <script src="print_my_name.js"></script>
+    <script>
+      printMyName = () => {
+        let myName = "Mwafrika";
+        let tag = document.createElement("p");
+        tag.innerHTML = myName;
+        document.getElementById("myName").appendChild(tag); // printing the name to the page
+        tag.style.textAlign = "center";
+        tag.style.fontSize = "60px";
+
+        console.log(myName); // printing my name in console
+      };
+      printMyName();
+    </script>
   </body>
 </html>
