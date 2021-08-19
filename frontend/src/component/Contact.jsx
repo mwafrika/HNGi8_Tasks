@@ -1,6 +1,6 @@
 import React from "react";
 import imageOverlay from "../img/earth.jpg";
-
+import { ArrowRight, Github, Linkedin, Twitter } from "react-bootstrap-icons";
 class Contact extends React.Component {
   render() {
     return (
@@ -111,38 +111,37 @@ class Contact extends React.Component {
                         </p>
                       </div>
                       <div className="socials">
-                        <ul>
-                          <li>
+                        <ul
+                          style={{
+                            display: "flex",
+                            justifyContent: "flex-start",
+                          }}
+                        >
+                          <li style={{ margin: "20px" }}>
                             <a
                               href=""
                               target="_blank"
                               rel="noopener noreferrer"
                             >
-                              <span className="ico-circle">
-                                <i className="ion-social-codepen"></i>
-                              </span>
+                              <Twitter color="royalblue" size={40} />
                             </a>
                           </li>
-                          <li>
+                          <li style={{ margin: "20px" }}>
                             <a
-                              href=""
+                              href="https://github.com/mwafrika"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
-                              <span className="ico-circle">
-                                <i className="ion-social-github"></i>
-                              </span>
+                              <Github color="royalblue" size={40} />
                             </a>
                           </li>
-                          <li>
+                          <li style={{ margin: "20px" }}>
                             <a
                               href=""
                               target="_blank"
                               rel="noopener noreferrer"
                             >
-                              <span className="ico-circle">
-                                <i className="ion-social-linkedin"></i>
-                              </span>
+                              <Linkedin color="royalblue" size={40} />
                             </a>
                           </li>
                         </ul>

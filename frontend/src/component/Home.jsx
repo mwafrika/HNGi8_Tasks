@@ -38,7 +38,7 @@ class Intro extends React.Component {
                   role="button"
                   target="_blank"
                 >
-                  Download my CV
+                  View my CV
                 </a>
               </p>
             </div>
