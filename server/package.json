@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/runtime": "^7.15.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "i": "^0.3.6",
+    "multiparty": "^4.2.2",
+    "nodemailer": "^6.6.3",
+    "nodemon": "^2.0.12",
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0"
+  },
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node ./build/index.js",
+    "dev-start": "nodemon --exec babel-node ./index.js",
+    "clean": "rm -rf build && mkdir build",
+    "build-babel": "babel -d ./build ./app.js -s",
+    "build": "npm run clean && npm run build-babel"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
