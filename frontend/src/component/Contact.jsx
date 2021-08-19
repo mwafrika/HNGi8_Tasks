@@ -1,6 +1,6 @@
 import React from "react";
 import imageOverlay from "../img/earth.jpg";
-import {Github, Linkedin, Twitter } from "react-bootstrap-icons";
+import { Github, Linkedin, Twitter } from "react-bootstrap-icons";
 class Contact extends React.Component {
   render() {
     return (
@@ -20,11 +20,7 @@ class Contact extends React.Component {
                         <h5 className="title-left">Send A Message</h5>
                       </div>
                       <div>
-                        <form
-                          action="https://formspree.io/xdoeonlo"
-                          method="POST"
-                          className="contactForm"
-                        >
+                        <form action="#" method="POST" className="contactForm">
                           <div id="sendmessage">
                             Your message has been sent. Thank you!
                           </div>
