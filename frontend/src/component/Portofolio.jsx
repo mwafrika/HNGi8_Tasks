@@ -2,12 +2,7 @@ import React from "react";
 
 //import stock
 import "./style.css";
-import stock from "../img/image1.jpg";
-import stock1 from "../img/image2.jpg";
 import stock2 from "../img/image3.jpg";
-import stock3 from "../img/image4.jpg";
-import stock4 from "../img/image5.jpg";
-import stock5 from "../img/image6.jpg";
 
 class Portfolio extends React.Component {
   render() {
@@ -38,6 +33,7 @@ class Portfolio extends React.Component {
                       <a
                         href="https://souvenirs-01.netlify.app"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <input
                           className="live"
@@ -51,6 +47,7 @@ class Portfolio extends React.Component {
                       <a
                         href="https://github.com/mwafrika/Souvenirs"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <input
                           className="github"
@@ -90,6 +87,7 @@ class Portfolio extends React.Component {
                       <a
                         href="https://afro-novatech.herokuapp.com"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <input
                           className="live"
@@ -103,6 +101,7 @@ class Portfolio extends React.Component {
                       <a
                         href="https://github.com/mwafrika/Novatech_Web"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <input
                           className="github"
@@ -142,6 +141,7 @@ class Portfolio extends React.Component {
                       <a
                         href="https://photo-galery-app.netlify.app"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <input
                           className="live"
@@ -155,6 +155,7 @@ class Portfolio extends React.Component {
                       <a
                         href="https://github.com/mwafrika/first-step-react-material-ui"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <input
                           className="github"
@@ -194,6 +195,7 @@ class Portfolio extends React.Component {
                       <a
                         href="https://souvenirs-01.netlify.app"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <input
                           className="live"
@@ -207,6 +209,7 @@ class Portfolio extends React.Component {
                       <a
                         href="https://github.com/mwafrika/Souvenirs"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <input
                           className="github"
@@ -246,6 +249,7 @@ class Portfolio extends React.Component {
                       <a
                         href="https://souvenirs-01.netlify.app"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <input
                           className="live"
@@ -298,6 +302,7 @@ class Portfolio extends React.Component {
                       <a
                         href="https://souvenirs-01.netlify.app"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <input
                           className="live"
@@ -311,6 +316,7 @@ class Portfolio extends React.Component {
                       <a
                         href="https://github.com/mwafrika/Bolg_App_Zuri_Training_Django"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <input
                           className="github"

@@ -1,7 +1,6 @@
 import React from "react";
 import "./starts.scss";
 import Typed from "react-typed";
-import Image from "../img/earth.jpg";
 
 class Intro extends React.Component {
   render() {

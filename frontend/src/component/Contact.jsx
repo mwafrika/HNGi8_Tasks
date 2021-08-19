@@ -1,6 +1,6 @@
 import React from "react";
 import imageOverlay from "../img/earth.jpg";
-import { ArrowRight, Github, Linkedin, Twitter } from "react-bootstrap-icons";
+import {Github, Linkedin, Twitter } from "react-bootstrap-icons";
 class Contact extends React.Component {
   render() {
     return (
