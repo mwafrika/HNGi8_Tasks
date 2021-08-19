@@ -1,0 +1,29 @@
+.title-work{
+font-weight: 600;
+font-size: larger;
+}
+.content-work{
+
+}
+.work-img{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.work-img input[type="button"]{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    bottom: 0;
+    left: 5px;
+    cursor: pointer;
+    z-index: 9;
+    width: 100px;
+    height: 40px;
+    background-color:transform(0,0,0,0.5);
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    transition: all 0.2s ease-in-out;
+    
+
+}

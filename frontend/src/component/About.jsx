@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./style.css";
 const About = () => {
   const [skills, setSkills] = useState({
     skills: [
@@ -39,19 +39,39 @@ const About = () => {
     ],
     about_me: [
       {
-        id: "first-p-about",
+        id: "about",
         content:
-          "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis.",
+          "I am a self-assured, passionate, and proactive Full-Stack web developer who enjoys being challenged and working on projects that require me to work outside of my comfort zone and knowledge set.",
+      },
+      {
+        id: "first-p-about",
+        title: "Professional Skills",
+        content:
+          "I have 3+ years of professional experience in software development and have worked with a variety of local and remote businesses to develop technological solutions. ",
       },
       {
         id: "second-p-about",
+        title: "Personal and Collaborative Projects",
         content:
-          "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis.",
+          "I have worked on a number of internal and external projects with clients and partners ",
       },
       {
         id: "third-p-about",
+        title: "Training",
         content:
-          "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis.",
+          "In the year 2019, I took part in a cutting-edge training in Andela/Kigali. I've had the opportunity to work as part of a group and collaborate with other international candidates. In 2021, I took part in Zuri training, which was a remote-based training designed to prepare us for the HGNi8 internship.",
+      },
+      {
+        id: "fourth-p-about",
+        title: "Intership",
+        content:
+          "As part of my final year of undergraduate computer science studies, I interned at Rawbank in 2018. I'm now enrolled in a three-month HNGi8 internship that I'm currently doing remotely.",
+      },
+      {
+        id: "fith-p-about",
+        title: "Spoken languages",
+        content:
+          "I'm fluent three main languages, French (native), English (advanced) and Swahili (native).",
       },
     ],
   });
@@ -104,9 +124,10 @@ const About = () => {
                     </div>
                     {skills.about_me.map((content) => {
                       return (
-                        <p className="lead" key={content.id}>
-                          {content.content}
-                        </p>
+                        <div className="lead" key={content.id}>
+                          <p className="title-work">{content.title}</p>
+                          <p className="content-work">{content.content}</p>
+                        </div>
                       );
                     })}
                   </div>

@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import logo1 from "../img/male1.png";
+import me from "../img/me.JPG";
 import logo2 from "../img/male.png";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [logo, setLogo] = useState({
     logo1,
+    me,
   });
   return (
     <nav
@@ -14,7 +16,11 @@ const Navbar = () => {
     >
       <div className="container">
         <a className="navbar-brand js-scroll" href="#page-top">
-          <img src={logo.logo1} alt="logo" style={{ maxWidth: "100px" }} />
+          <img
+            src={logo.me}
+            alt="logo"
+            style={{ maxWidth: "120px", borderRadius: "50%", margin: "0 auto" }}
+          />
         </a>
         <button
           className="navbar-toggler collapsed"
