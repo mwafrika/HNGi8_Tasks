@@ -28,44 +28,44 @@ class Portfolio extends React.Component {
           <div className="row">
             <div className="col-md-3">
               <div className="work-box">
-                {/* <a href={stock2} data-lightbox="gallery-vmarine"> */}
                 <div className="work-img">
                   <img src={stock2} alt="" className="img-fluid" />
-                  <div style={{ display: "flex", flexDirection: "row" }}>
+                  <div className="overlay-container">
                     <div>
-                      <a href="#">
+                      <a
+                        href="https://souvenirs-01.netlify.app"
+                        target="_blank"
+                      >
                         <input
+                          className="live"
                           type="button"
-                          name="live demo"
+                          name="live"
                           value="Live demo"
                         />
                       </a>
                     </div>
                     <div>
-                      <a href="#">
+                      <a
+                        href="https://github.com/mwafrika/Souvenirs"
+                        target="_blank"
+                      >
                         <input
+                          className="github"
                           type="button"
-                          name="live demo"
-                          value="Live demo"
+                          name="github"
+                          value="View on Github"
                         />
                       </a>
                     </div>
-                    <a href="#">
-                      <input
-                        type="button"
-                        name="live demo"
-                        value="View on Github"
-                      />
-                    </a>
                   </div>
                 </div>
                 <div className="work-content">
                   <div className="row">
                     <div className="col-sm-8">
-                      <h2 className="w-title">Lorem Ipsum</h2>
+                      <h2 className="w-title">Souvenirs</h2>
                       <div className="w-more">
                         <span className="w-ctegory">
-                          HTML5 CSS3 Bootstrap ReactJS
+                          Reactjs Redux Nodejs Express Material-UI
                         </span>
                       </div>
                     </div>
@@ -76,347 +76,266 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </div>
-                {/* </a> */}
-                {/* <a
-                  href={stock1}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a> */}
               </div>
             </div>
             <div className="col-md-3">
               <div className="work-box">
-                <a href={stock2} data-lightbox="gallery-aguadeluz">
-                  <div className="work-img">
-                    <img src={stock2} alt="" className="img-fluid" />
+                <div className="work-img">
+                  <img src={stock2} alt="" className="img-fluid" />
+                  <div className="overlay-container">
+                    <div>
+                      <a
+                        href="https://souvenirs-01.netlify.app"
+                        target="_blank"
+                      >
+                        <input
+                          className="live"
+                          type="button"
+                          name="live"
+                          value="Live demo"
+                        />
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/mwafrika/Souvenirs"
+                        target="_blank"
+                      >
+                        <input
+                          className="github"
+                          type="button"
+                          name="github"
+                          value="View on Github"
+                        />
+                      </a>
+                    </div>
                   </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap Webpack SmoothScrolling
-                            VanillaJS
-                          </span>{" "}
-                        </div>
+                </div>
+                <div className="work-content">
+                  <div className="row">
+                    <div className="col-sm-8">
+                      <h2 className="w-title">Souvenirs</h2>
+                      <div className="w-more">
+                        <span className="w-ctegory">
+                          Reactjs Redux Nodejs Express Material-UI
+                        </span>
                       </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
+                    </div>
+                    <div className="col-sm-4">
+                      <div className="w-like">
+                        <span className="ion-ios-plus-outline"></span>
                       </div>
                     </div>
                   </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                </div>
               </div>
             </div>
             <div className="col-md-3">
               <div className="work-box">
-                <a href={stock2} data-lightbox="gallery-todo">
-                  <div className="work-img">
-                    <img src={stock2} alt="" className="img-fluid" />
+                <div className="work-img">
+                  <img src={stock2} alt="" className="img-fluid" />
+                  <div className="overlay-container">
+                    <div>
+                      <a
+                        href="https://souvenirs-01.netlify.app"
+                        target="_blank"
+                      >
+                        <input
+                          className="live"
+                          type="button"
+                          name="live"
+                          value="Live demo"
+                        />
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/mwafrika/Souvenirs"
+                        target="_blank"
+                      >
+                        <input
+                          className="github"
+                          type="button"
+                          name="github"
+                          value="View on Github"
+                        />
+                      </a>
+                    </div>
                   </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap Webpack ReactJS
-                          </span>
-                          {/*} / <span className="w-date">18 Sep. 2018</span>*/}
-                        </div>
+                </div>
+                <div className="work-content">
+                  <div className="row">
+                    <div className="col-sm-8">
+                      <h2 className="w-title">Souvenirs</h2>
+                      <div className="w-more">
+                        <span className="w-ctegory">
+                          Reactjs Redux Nodejs Express Material-UI
+                        </span>
                       </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
+                    </div>
+                    <div className="col-sm-4">
+                      <div className="w-like">
+                        <span className="ion-ios-plus-outline"></span>
                       </div>
                     </div>
                   </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                </div>
               </div>
             </div>
             <div className="col-md-3">
               <div className="work-box">
-                <a href={stock2} data-lightbox="gallery-medlingos">
-                  <div className="work-img">
-                    <img src={stock2} alt="" className="img-fluid" />
+                <div className="work-img">
+                  <img src={stock2} alt="" className="img-fluid" />
+                  <div className="overlay-container">
+                    <div>
+                      <a
+                        href="https://souvenirs-01.netlify.app"
+                        target="_blank"
+                      >
+                        <input
+                          className="live"
+                          type="button"
+                          name="live"
+                          value="Live demo"
+                        />
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/mwafrika/Souvenirs"
+                        target="_blank"
+                      >
+                        <input
+                          className="github"
+                          type="button"
+                          name="github"
+                          value="View on Github"
+                        />
+                      </a>
+                    </div>
                   </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            Bootstrap ReactJS GoogleAPI
-                          </span>
-                        </div>
+                </div>
+                <div className="work-content">
+                  <div className="row">
+                    <div className="col-sm-8">
+                      <h2 className="w-title">Souvenirs</h2>
+                      <div className="w-more">
+                        <span className="w-ctegory">
+                          Reactjs Redux Nodejs Express Material-UI
+                        </span>
                       </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
+                    </div>
+                    <div className="col-sm-4">
+                      <div className="w-like">
+                        <span className="ion-ios-plus-outline"></span>
                       </div>
                     </div>
                   </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                </div>
               </div>
             </div>
             <div className="col-md-3">
               <div className="work-box">
-                <a href={stock2} data-lightbox="gallery-smth">
-                  <div className="work-img">
-                    <img src={stock2} alt="" className="img-fluid" />
+                <div className="work-img">
+                  <img src={stock2} alt="" className="img-fluid" />
+                  <div className="overlay-container">
+                    <div>
+                      <a
+                        href="https://souvenirs-01.netlify.app"
+                        target="_blank"
+                      >
+                        <input
+                          className="live"
+                          type="button"
+                          name="live"
+                          value="Live demo"
+                        />
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/mwafrika/Souvenirs"
+                        target="_blank"
+                      >
+                        <input
+                          className="github"
+                          type="button"
+                          name="github"
+                          value="View on Github"
+                        />
+                      </a>
+                    </div>
                   </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">MERN</span>
-                        </div>
+                </div>
+                <div className="work-content">
+                  <div className="row">
+                    <div className="col-sm-8">
+                      <h2 className="w-title">Souvenirs</h2>
+                      <div className="w-more">
+                        <span className="w-ctegory">
+                          Reactjs Redux Nodejs Express Material-UI
+                        </span>
                       </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
+                    </div>
+                    <div className="col-sm-4">
+                      <div className="w-like">
+                        <span className="ion-ios-plus-outline"></span>
                       </div>
                     </div>
                   </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                </div>
               </div>
             </div>
             <div className="col-md-3">
               <div className="work-box">
-                <a href={stock2} data-lightbox="gallery-mf">
-                  <div className="work-img">
-                    <img src={stock2} alt="" className="img-fluid" />
+                <div className="work-img">
+                  <img src={stock2} alt="" className="img-fluid" />
+                  <div className="overlay-container">
+                    <div>
+                      <a
+                        href="https://souvenirs-01.netlify.app"
+                        target="_blank"
+                      >
+                        <input
+                          className="live"
+                          type="button"
+                          name="live"
+                          value="Live demo"
+                        />
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/mwafrika/Souvenirs"
+                        target="_blank"
+                      >
+                        <input
+                          className="github"
+                          type="button"
+                          name="github"
+                          value="View on Github"
+                        />
+                      </a>
+                    </div>
                   </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap MERN
-                          </span>
-                        </div>
+                </div>
+                <div className="work-content">
+                  <div className="row">
+                    <div className="col-sm-8">
+                      <h2 className="w-title">Souvenirs</h2>
+                      <div className="w-more">
+                        <span className="w-ctegory">
+                          Reactjs Redux Nodejs Express Material-UI
+                        </span>
                       </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
+                    </div>
+                    <div className="col-sm-4">
+                      <div className="w-like">
+                        <span className="ion-ios-plus-outline"></span>
                       </div>
                     </div>
                   </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
+                </div>
               </div>
             </div>
           </div>
