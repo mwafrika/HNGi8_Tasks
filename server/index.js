@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import nodemailer from "nodemailer";
 import path from "path";
-import {dirname} from "path";
+const __dirname = path.dirname(__filename);
 const app = express();
 dotenv.config();
 
