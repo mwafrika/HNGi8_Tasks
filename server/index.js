@@ -8,7 +8,7 @@ import nodemailer from "nodemailer";
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static(__dirname + "/public"));
+app.use("/", express.static(__dirname + "../frontend/build"));
 app.use(cors());
 
 let transporter = nodemailer.createTransport({
@@ -53,7 +53,9 @@ app.post("/send", (req, res) => {
     }
   });
 });
-
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
+});
 const PORT = 5000 || process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);

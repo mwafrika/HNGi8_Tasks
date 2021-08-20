@@ -23,9 +23,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run start-server \" \"npm run start-client:full\"",
+    "start": "concurrently --kill-others-on-fail \"npm run start-server \" \"npm run start-client\"",
     "start-server": "babel-node index.js --prefix server",
-    "start-client:full": "cd ../frontend/ && npm run build",
+    "start-client": "cd ../frontend/ && npm run build",
+    "heroku-postbuild": "cd  ../frontend && npm install --only=start && npm install && npm run build",
     "dev-start": "nodemon --exec babel-node ./index.js",
     "clean1": "rm -rf build && mkdir build",
     "build2-babel": "babel -d ./build ./index.js -s",
