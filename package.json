@@ -20,9 +20,10 @@
   },
   "name": "server",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
+    "start":"node server/index.js",
     "dev": "concurrently --kill-others-on-fail \"npm run start-server \" \"npm run start-client\"",
     "start-server": "babel-node index.js --prefix server",
     "start-client": "cd frontend/ && start",
@@ -31,6 +32,7 @@
     "clean1": "rm -rf build && mkdir build",
     "build2-babel": "babel -d ./build ./index.js -s",
     "build3": "npm run clean && npm run build-babel"
+    
   },
   "keywords": [],
   "author": "",
