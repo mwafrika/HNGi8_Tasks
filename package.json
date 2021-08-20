@@ -21,16 +21,16 @@
   "name": "server",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "start":"node –-experimental-modules server/index.js",
+    "start":"node –-experimental-modules server/index.mjs",
     "dev": "concurrently --kill-others-on-fail \"npm run start-server \" \"npm run start-client\"",
-    "start-server": "babel-node index.js --prefix server",
+    "start-server": "babel-node index.mjs --prefix server",
     "start-client": "cd frontend/ && start",
     "heroku-postbuild": "cd  frontend && npm install --only=dev && npm install && npm run build",
-    "dev-start": "nodemon --exec babel-node ./index.js",
+    "dev-start": "nodemon --exec babel-node ./index.mjs",
     "clean1": "rm -rf build && mkdir build",
-    "build2-babel": "babel -d ./build ./index.js -s",
+    "build2-babel": "babel -d ./build ./index.mjs -s",
     "build3": "npm run clean && npm run build-babel"
     
   },
