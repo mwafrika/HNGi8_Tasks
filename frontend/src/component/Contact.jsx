@@ -1,23 +1,76 @@
 import React, { useState, useEffect } from "react";
 import imageOverlay from "../img/earth.jpg";
+import axios from "axios";
 import { Github, Linkedin, Twitter } from "react-bootstrap-icons";
+import { Toast, Col, Button } from "react-bootstrap";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const [contact, setContact] = useState({
     name: "",
     email: "",
     message: "",
+    subject: "",
   });
-  const handleChange = (e) => {
-    setContact({
-      ...contact,
-      [e.target.name]: e.target.value,
+
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
+
+  const [showA, setShowA] = useState(true);
+  const [showB, setShowB] = useState(true);
+
+  const toggleShowA = () => setShowA(!showA);
+  const toggleShowB = () => setShowB(!showB);
+
+  const diffToast = (e) => {
+    e.preventDefault();
+    toast("Login Successfully!", {
+      position: "top-center",
     });
   };
-  const handleSubmit = (e) => {
+
+  const handleChange = (e) => {
+    setContact((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(contact);
+    const response = await axios
+      .post("http://localhost:5000/send", contact, {
+        headers: { "Content-type": "application/json" },
+        method: "POST",
+        body: JSON.stringify(contact),
+      })
+      .then(async (res) => {
+        const resData = await res.data;
+        console.log(resData);
+        if (resData.status === "success") {
+          toast("Message Sent Successfully!", {
+            position: "top-center",
+          });
+        } else if (resData.status === "fail") {
+          toast.error("Message Sending Failed!", {
+            position: "top-center",
+          });
+        }
+      })
+      .then(() => {
+        setContact({
+          name: "",
+          email: "",
+          message: "",
+          subject: "",
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
+
   return (
     <section
       className="paralax-mf footer-paralax bg-image sect-mt4 route"
@@ -36,17 +89,20 @@ const Contact = () => {
                     </div>
                     <div>
                       {/* <form action="#" method="POST" className="contactForm"> */}
-                      <form className="contactForm">
-                        <div id="sendmessage">
-                          Your message has been sent. Thank you!
-                        </div>
-                        <div id="errormessage"></div>
+                      <form
+                        action="http://localhost:3000/"
+                        method="POST"
+                        className="contactForm"
+                      >
+                        <ToastContainer auto-close={2000} />
+
                         <div className="row">
                           <div className="col-md-12 mb-3">
                             <div className="form-group">
                               <input
                                 type="text"
                                 name="name"
+                                value={contact.name}
                                 className="form-control"
                                 id="name"
                                 placeholder="Your Name"
@@ -64,6 +120,7 @@ const Contact = () => {
                                 className="form-control"
                                 name="email"
                                 id="email"
+                                value={contact.email}
                                 placeholder="Your Email"
                                 data-rule="email"
                                 data-msg="Please enter a valid email"
@@ -79,6 +136,7 @@ const Contact = () => {
                                 className="form-control"
                                 name="subject"
                                 id="subject"
+                                value={contact.subject}
                                 placeholder="Subject"
                                 data-rule="minlen:4"
                                 data-msg="Please enter at least 8 chars of subject"
@@ -92,6 +150,7 @@ const Contact = () => {
                               <textarea
                                 className="form-control"
                                 name="message"
+                                value={contact.message}
                                 rows="5"
                                 data-rule="required"
                                 data-msg="Please write something for us"
