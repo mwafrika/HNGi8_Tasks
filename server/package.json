@@ -25,7 +25,7 @@
   "scripts": {
     "deploy": "concurrently \"npm run start-server \" \"npm run start-client\"",
     "start-server": "babel-node index.js --prefix server",
-    "start-client": "cd ../frontend/ && npm run build && cd ./build && npm start ",
+    "start-client": "cd ../frontend/ && npm run build && cd ./build && npm start",
     "dev-start": "nodemon --exec babel-node ./index.js",
     "clean1": "rm -rf build && mkdir build",
     "build2-babel": "babel -d ./build ./index.js -s",
