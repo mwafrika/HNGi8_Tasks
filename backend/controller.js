@@ -1,20 +1,7 @@
-import express from "express";
-import dotenv from "dotenv";
-import cors from "cors";
+
 import nodemailer from "nodemailer";
-import path from "path";
-import { fileURLToPath } from "url";
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const app = express();
+import dotenv from "dotenv";
 dotenv.config();
-
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
-
-app.use(cors());
-
-app.use("/", express.static(path.join(__dirname, "../frontend/build")));
 
 let transporter = nodemailer.createTransport({
   service: "gmail",
@@ -34,7 +21,7 @@ transporter.verify((err, success) => {
     : console.log(`=== Server is ready to take messages: ${success} ===`);
 });
 
-app.post("/send", (req, res) => {
+const sendMessage = (req, res) => {
   const { name, email, message, subject } = req.body;
   let mailOptions = {
     from: email,
@@ -57,11 +44,6 @@ app.post("/send", (req, res) => {
       console.log("Email sent successfully");
     }
   });
-});
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
-});
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`);
-});
+};
+
+export default sendMessage;
