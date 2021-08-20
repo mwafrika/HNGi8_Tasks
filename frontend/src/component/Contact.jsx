@@ -40,7 +40,7 @@ const Contact = () => {
     e.preventDefault();
     console.log(contact);
     const response = await axios
-      .post("http://localhost:5000/send", contact, {
+      .post("https://portofolio-hngi8.herokuapp.com/send", contact, {
         headers: { "Content-type": "application/json" },
         method: "POST",
         body: JSON.stringify(contact),
@@ -90,7 +90,7 @@ const Contact = () => {
                     <div>
                       {/* <form action="#" method="POST" className="contactForm"> */}
                       <form
-                        action="http://localhost:3000/"
+                        action="https://portofolio-hngi8.herokuapp.com"
                         method="POST"
                         className="contactForm"
                       >
