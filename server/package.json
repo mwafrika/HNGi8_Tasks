@@ -7,8 +7,10 @@
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.15.0",
     "@babel/runtime": "^7.15.3",
+    "concurrently": "^6.2.1",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
     "express": "^4.17.1",
     "i": "^0.3.6",
     "multiparty": "^4.2.2",
@@ -21,11 +23,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && node ./build/index.js",
+    "start": "concurrently \"npm run start-server \" \"npm run start-client\"",
+    "start-server": "babel-node index.js --prefix server",
+    "start-client": "cd ../frontend/ && npm run build && cd ./build && npm start ",
     "dev-start": "nodemon --exec babel-node ./index.js",
-    "clean": "rm -rf build && mkdir build",
-    "build-babel": "babel -d ./build ./app.js -s",
-    "build": "npm run clean && npm run build-babel"
+    "clean1": "rm -rf build && mkdir build",
+    "build2-babel": "babel -d ./build ./index.js -s",
+    "build3": "npm run clean && npm run build-babel"
+    
   },
   "keywords": [],
   "author": "",
