@@ -23,7 +23,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js",
+    "start":"node cd server/index.js",
     "dev": "concurrently --kill-others-on-fail \"npm run start-server \" \"npm run start-client\"",
     "start-server": "babel-node index.js --prefix server",
     "start-client": "cd frontend/ && start",
