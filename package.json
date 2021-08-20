@@ -23,9 +23,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start":"node server/index.js",
+    "start":"node –-experimental-modules server/index.js",
     "dev": "concurrently --kill-others-on-fail \"npm run start-server \" \"npm run start-client\"",
-    "start-server": "babel-node index.js –experimental-modules --prefix server",
+    "start-server": "babel-node index.js --prefix server",
     "start-client": "cd frontend/ && start",
     "heroku-postbuild": "cd  frontend && npm install --only=dev && npm install && npm run build",
     "dev-start": "nodemon --exec babel-node ./index.js",
