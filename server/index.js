@@ -2,12 +2,14 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import nodemailer from "nodemailer";
+import path from "path";
+import {dirname} from "path";
 const app = express();
 dotenv.config();
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use("/", express.static(__dirname + "../frontend/build"));
+app.use("/", express.static(path.join(__dirname, "../frontend/build")));
 app.use(cors());
 
 let transporter = nodemailer.createTransport({
