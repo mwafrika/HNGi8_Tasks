@@ -194,7 +194,11 @@ const Contact = () => {
                         }}
                       >
                         <li style={{ margin: "20px" }}>
-                          <a href="" target="_blank" rel="noopener noreferrer">
+                          <a
+                            href="https://twitter.com/mwafrikamufung1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <Twitter color="royalblue" size={40} />
                           </a>
                         </li>
@@ -208,7 +212,11 @@ const Contact = () => {
                           </a>
                         </li>
                         <li style={{ margin: "20px" }}>
-                          <a href="" target="_blank" rel="noopener noreferrer">
+                          <a
+                            href="https://www.linkedin.com/in/mwafrika-mufungizi"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <Linkedin color="royalblue" size={40} />
                           </a>
                         </li>
