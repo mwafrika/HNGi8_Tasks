@@ -119,7 +119,7 @@ class Portfolio extends React.Component {
                       <h2 className="w-title">Souvenirs</h2>
                       <div className="w-more">
                         <span className="w-ctegory">
-                          Reactjs Redux Nodejs Express Material-UI
+                          Reactjs CSS
                         </span>
                       </div>
                     </div>
@@ -173,7 +173,7 @@ class Portfolio extends React.Component {
                       <h2 className="w-title">Souvenirs</h2>
                       <div className="w-more">
                         <span className="w-ctegory">
-                          Reactjs Redux Nodejs Express Material-UI
+                          Reactjs Material-UI
                         </span>
                       </div>
                     </div>
@@ -247,7 +247,7 @@ class Portfolio extends React.Component {
                   <div className="overlay-container">
                     <div>
                       <a
-                        href="https://souvenirs-01.netlify.app"
+                        href="#"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -300,7 +300,7 @@ class Portfolio extends React.Component {
                   <div className="overlay-container">
                     <div>
                       <a
-                        href="https://souvenirs-01.netlify.app"
+                        href="#"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
