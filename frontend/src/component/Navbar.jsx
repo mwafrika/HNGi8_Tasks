@@ -17,11 +17,11 @@ const Navbar = () => {
     >
       <div className="container">
         <a className="navbar-brand js-scroll" href="#page-top">
-          <img
-            src={logo.hng}
-            alt="logo"
-            style={{ maxWidth: "120px", borderRadius: "50%", margin: "0 auto" }}
-          />
+//           <img
+//             src={logo.hng}
+//             alt="logo"
+//             style={{ maxWidth: "120px", borderRadius: "50%", margin: "0 auto" }}
+//           />
         </a>
         <button
           className="navbar-toggler collapsed"
