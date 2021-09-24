@@ -85,6 +85,168 @@ class Portfolio extends React.Component {
                   <div className="overlay-container">
                     <div>
                       <a
+                        href="https://zuri.chat/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <input
+                          className="live"
+                          type="button"
+                          name="live"
+                          value="Live demo"
+                        />
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/mwafrika/zc_main"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <input
+                          className="github"
+                          type="button"
+                          name="github"
+                          value="View on Github"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="work-content">
+                  <div className="row">
+                    <div className="col-sm-8">
+                      <h2 className="w-title">Slack Clone</h2>
+                      <div className="w-more">
+                        <span className="w-ctegory">
+                          Reactjs Redux Nodejs Express Material-UI
+                        </span>
+                      </div>
+                    </div>
+                    <div className="col-sm-4">
+                      <div className="w-like">
+                        <span className="ion-ios-plus-outline"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="work-box">
+                <div className="work-img">
+                  <img src={stock2} alt="" className="img-fluid" />
+                  <div className="overlay-container">
+                    <div>
+                      <a
+                        href="https://kevent-dashboard.netlify.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <input
+                          className="live"
+                          type="button"
+                          name="live"
+                          value="Live demo"
+                        />
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/lemoissonM/-Kevent-dashboard"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <input
+                          className="github"
+                          type="button"
+                          name="github"
+                          value="View on Github"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="work-content">
+                  <div className="row">
+                    <div className="col-sm-8">
+                      <h2 className="w-title">Slack Clone</h2>
+                      <div className="w-more">
+                        <span className="w-ctegory">
+                          Reactjs Redux Nodejs Express Material-UI
+                        </span>
+                      </div>
+                    </div>
+                    <div className="col-sm-4">
+                      <div className="w-like">
+                        <span className="ion-ios-plus-outline"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="work-box">
+                <div className="work-img">
+                  <img src={stock2} alt="" className="img-fluid" />
+                  <div className="overlay-container">
+                    <div>
+                      <a
+                        href="https://play.google.com/store/apps/details?id=com.kwetuentreprise.kevent"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <input
+                          className="live"
+                          type="button"
+                          name="live"
+                          value="Live demo"
+                        />
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/lemoissonM/KEVENT-2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <input
+                          className="github"
+                          type="button"
+                          name="github"
+                          value="View on Github"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="work-content">
+                  <div className="row">
+                    <div className="col-sm-8">
+                      <h2 className="w-title">Slack Clone</h2>
+                      <div className="w-more">
+                        <span className="w-ctegory">
+                          Reactjs Redux Nodejs Express Material-UI
+                        </span>
+                      </div>
+                    </div>
+                    <div className="col-sm-4">
+                      <div className="w-like">
+                        <span className="ion-ios-plus-outline"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="work-box">
+                <div className="work-img">
+                  <img src={stock2} alt="" className="img-fluid" />
+                  <div className="overlay-container">
+                    <div>
+                      <a
                         href="https://afro-novatech.herokuapp.com"
                         target="_blank"
                         rel="noopener noreferrer"
