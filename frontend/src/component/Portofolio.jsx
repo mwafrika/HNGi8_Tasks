@@ -116,7 +116,7 @@ class Portfolio extends React.Component {
                 <div className="work-content">
                   <div className="row">
                     <div className="col-sm-8">
-                      <h2 className="w-title">Souvenirs</h2>
+                      <h2 className="w-title">Novatech</h2>
                       <div className="w-more">
                         <span className="w-ctegory">
                           Reactjs CSS
@@ -170,7 +170,7 @@ class Portfolio extends React.Component {
                 <div className="work-content">
                   <div className="row">
                     <div className="col-sm-8">
-                      <h2 className="w-title">Souvenirs</h2>
+                      <h2 className="w-title">Photo Galery Landing Page</h2>
                       <div className="w-more">
                         <span className="w-ctegory">
                           Reactjs Material-UI
@@ -186,60 +186,7 @@ class Portfolio extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="col-md-3">
-              <div className="work-box">
-                <div className="work-img">
-                  <img src={stock2} alt="" className="img-fluid" />
-                  <div className="overlay-container">
-                    <div>
-                      <a
-                        href="https://souvenirs-01.netlify.app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <input
-                          className="live"
-                          type="button"
-                          name="live"
-                          value="Live demo"
-                        />
-                      </a>
-                    </div>
-                    <div>
-                      <a
-                        href="https://github.com/mwafrika/Souvenirs"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <input
-                          className="github"
-                          type="button"
-                          name="github"
-                          value="View on Github"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="work-content">
-                  <div className="row">
-                    <div className="col-sm-8">
-                      <h2 className="w-title">Souvenirs</h2>
-                      <div className="w-more">
-                        <span className="w-ctegory">
-                          Reactjs Redux Nodejs Express Material-UI
-                        </span>
-                      </div>
-                    </div>
-                    <div className="col-sm-4">
-                      <div className="w-like">
-                        <span className="ion-ios-plus-outline"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          
             <div className="col-md-3">
               <div className="work-box">
                 <div className="work-img">
@@ -277,7 +224,7 @@ class Portfolio extends React.Component {
                 <div className="work-content">
                   <div className="row">
                     <div className="col-sm-8">
-                      <h2 className="w-title">Souvenirs</h2>
+                      <h2 className="w-title">Trade by barter</h2>
                       <div className="w-more">
                         <span className="w-ctegory">
                           Reactjs Redux Nodejs Express Material-UI
@@ -331,7 +278,7 @@ class Portfolio extends React.Component {
                 <div className="work-content">
                   <div className="row">
                     <div className="col-sm-8">
-                      <h2 className="w-title">Souvenirs</h2>
+                      <h2 className="w-title">Blog page</h2>
                       <div className="w-more">
                         <span className="w-ctegory">
                           Reactjs Redux Nodejs Express Material-UI
