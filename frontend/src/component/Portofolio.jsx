@@ -119,7 +119,7 @@ class Portfolio extends React.Component {
                       <h2 className="w-title">Slack Clone</h2>
                       <div className="w-more">
                         <span className="w-ctegory">
-                          Reactjs Redux Nodejs Express Material-UI
+                          Reactjs Redux CSS
                         </span>
                       </div>
                     </div>
@@ -170,10 +170,10 @@ class Portfolio extends React.Component {
                 <div className="work-content">
                   <div className="row">
                     <div className="col-sm-8">
-                      <h2 className="w-title">Slack Clone</h2>
+                      <h2 className="w-title">Kevent web</h2>
                       <div className="w-more">
                         <span className="w-ctegory">
-                          Reactjs Redux Nodejs Express Material-UI
+                          Reactjs Redux SaaS
                         </span>
                       </div>
                     </div>
@@ -224,10 +224,10 @@ class Portfolio extends React.Component {
                 <div className="work-content">
                   <div className="row">
                     <div className="col-sm-8">
-                      <h2 className="w-title">Slack Clone</h2>
+                      <h2 className="w-title">Kevent Mobile</h2>
                       <div className="w-more">
                         <span className="w-ctegory">
-                          Reactjs Redux Nodejs Express Material-UI
+                          React Native Redux SaaS
                         </span>
                       </div>
                     </div>
