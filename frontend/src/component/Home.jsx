@@ -33,7 +33,7 @@ class Intro extends React.Component {
               <p className="pt-3">
                 <a
                   className="btn btn-primary btn js-scroll px-4"
-                  href="https://resume.io/r/XxpYlFW67"
+                  href="https://docs.google.com/document/d/1eN9em5cBDWcuPfEy196o2IoQ3wcczv2kuN5o7ki0lmk/edit?usp=sharing"
                   role="button"
                   target="_blank"
                 >
